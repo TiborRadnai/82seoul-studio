@@ -29,6 +29,7 @@ export const artist = {
           { title: 'Fiúcsapat (BG)', value: 'bg' },
           { title: 'Lánycsapat (GG)', value: 'gg' },
           { title: 'Szóló Előadó', value: 'solo' },
+          { title: 'Duo & Co-ed', value: 'coed' },
         ],
       },
     },
@@ -39,8 +40,8 @@ export const artist = {
       options: {
         list: [
           { title: 'Férfi (männlich)', value: 'male' },
-        { title: 'Nő (weiblich)', value: 'female' },
-      ],
+          { title: 'Nő (weiblich)', value: 'female' },
+        ],
         layout: 'radio',
       },
       hidden: ({ document }: { document: any }) => document?.category !== 'solo',
